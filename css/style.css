@@ -1,0 +1,435 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+/*Start Navigation*/
+nav {
+  display: flex;
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+nav .logo {
+  display: block;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 30px;
+  flex: 3;
+  color: #eeeeee;
+}
+nav .links {
+  list-style: none;
+  flex: 9;
+  display: flex;
+}
+nav .links li {
+  margin-right: 30px;
+  margin-top: 8px;
+  position: relative;
+}
+nav .links li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.4px;
+  bottom: -10px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: all 0.3s ease-out;
+}
+nav .links li:nth-child(1):after {
+  transform: scaleX(1);
+}
+nav .links li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: white;
+}
+nav .links li a {
+  font-size: 18px;
+  font-family: "Garamond", serif;
+  line-height: 1.28;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: white;
+}
+/*End Navigation*/
+/*Start header*/
+
+.header {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(../images/pexels-rachel-claire-4577179.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 120vh;
+  position: relative;
+  background-attachment: scroll;
+}
+.content-headers {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  text-align: center;
+}
+.content-headers h1,
+.content-headers p {
+  color: white;
+  /* font-family: 'Cinzel Decorative', cursive; */
+}
+.content-headers h1 {
+  font-size: 55px;
+  font-family: "Garamond", serif;
+  margin-bottom: 50px;
+}
+.content-headers h1 span {
+  display: block;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 150px;
+}
+.content-headers p {
+  font-style: italic;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 19px;
+}
+/*End header*/
+
+/*start abstract*/
+.abstract {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 8%;
+  padding-right: 0%;
+  column-gap: 30px;
+}
+.abstract .abs-text h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Cinzel Decorative", cursive;
+  letter-spacing: 5px;
+}
+.abstract .abs-text :nth-child(2) {
+  font-style: italic;
+  font-size: 18px;
+}
+.underline-hr {
+  width: 38px;
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+  color: white;
+  opacity: 1;
+  margin: 30px 0px;
+}
+.abstract .abs-text :nth-child(4) {
+  color: #888;
+  font-family: "Garamond", serif;
+  font-size: 24px;
+}
+.abstract .abs-text :nth-child(4) span {
+  font-style: italic;
+  font-size: 22px;
+}
+.abstract img {
+  width: 100%;
+}
+.abstract .abs-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+.img-col-1 img {
+  height: 200px;
+}
+.img-col-1 > img {
+  margin-bottom: 20px;
+}
+.img-col-2 img {
+  height: 420px;
+}
+/*End abstract*/
+.features {
+  padding: 40px 0px;
+}
+.features h2 {
+  position: relative;
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+.features h2 span {
+  color: white;
+  margin-left: 30px;
+}
+.features .shape-bg {
+
+  position: absolute;
+  background-color: black;
+  clip-path: polygon(0 40%, 100% 40%, 90% 60%, 100% 75%, 0 75%, 10% 60%);
+  width: 270px;
+  height: 158px;
+  left: 45.8%;
+  top: 212%;
+}
+.contin-features {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  justify-content: center;
+  column-gap: 15px;
+}
+.contin-features div {
+  text-align: center;
+  background-color: #212529;
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.contin-features div:hover {
+  box-shadow: rgba(0, 0, 0, 0.85) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.8) 0px 0px 0px 1px;
+}
+.contin-features div img {
+  width: 150px;
+  height: 100px;
+}
+.contin-features div h5 {
+  margin: 15px 0px;
+}
+.contin-features div p {
+  color: lightslategray;
+}
+
+/* Start home menu */
+.home-menu {
+  padding: 10% 5%;
+}
+.home-menu h2 {
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+.contain-home-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.contain-home-menu .product {
+  position: relative;
+  transition: all 0.3s;
+}
+.contain-home-menu .product img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  transition: 500ms ease-out;
+}
+.contain-home-menu .product img:hover {
+  box-shadow: 0 5px 23px 0 rgb(0 0 0 / 35%);
+}
+
+.nameAndprice {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: "Garamond", serif;
+}
+.nameAndprice h6,
+.nameAndprice p {
+  font-size: 20px;
+}
+.nameAndprice p {
+  font-style: italic;
+}
+.contain-home-menu .product::before {
+  position: absolute;
+  content: "Chef’s Special";
+  font-family: "Garamond", serif;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  line-height: 17px;
+  font-style: italic;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 2px 3px;
+  transition: 350ms ease-out;
+  left: 20px;
+  top: 20px;
+}
+.product:hover:before {
+  left: 10px;
+  top: 10px;
+}
+.see-menu {
+  position: relative;
+  width: 150px;
+  font-family: "Garamond", serif;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  color: black;
+  border: black 1px solid;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  box-shadow: 2px 3px;
+  transform: perspective(1px) translateZ(0);
+  transition: 0.4s;
+}
+
+.see-menu::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+  opacity: 1;
+  transition: 0.4s;
+}
+.see-menu:hover:before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
+}
+.see-menu:hover {
+  color: white;
+  box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+}
+/* End home menu */
+
+.ourVisitor {
+  padding: 5% 0px;
+}
+.ourVisitor h2 {
+  text-align: center;
+}
+.ourVisitor .underline-hr {
+  margin: 30px auto;
+}
+.contain-visitor {
+  display: grid;
+  grid-template-columns: repeat(2, 35%);
+  justify-content: center;
+  column-gap: 100px;
+}
+.visitor-info {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 15px;
+}
+.visitor-info .visitor-name {
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.visitor-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.visitor-comment {
+  position: relative;
+  padding: 20px 22px;
+  background: #f9f9f9;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+.visitor-comment::after,
+.visitor-comment::before {
+  content: "";
+  border-width: 18px 0 0 18px;
+  border-style: solid;
+  border-color: #f2f2f2 transparent transparent;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+.visitor-comment::before {
+  border-width: 18px 18px 0 0;
+  left: auto;
+  right: 0;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.meals-title {
+  text-align: center;
+}
+.underline-meal {
+  margin: auto;
+}
+.meals {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 20px;
+  padding: 5% 0px;
+}
+.contain-meals {
+  position: relative;
+  /* width: 50%; */
+}
+
+/* Make the image to responsive */
+.contain-meals .image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.contain-meals .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #11111191;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 1s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.contain-meals:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.contain-meals .text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Garamond", serif;
+}
+
+

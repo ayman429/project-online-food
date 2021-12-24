@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+3:wght@200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Play", sans-serif;
+  background-color: #e7e3e3;
+}
+
+:root{
+
+    --main-color--:rgb(223, 124, 43);
+}
+
+/* information-contact*/
+
+.information-contact {
+ 
+  padding: 10px;
+  display: flex;
+  opacity: 0.5;
+ 
+ 
+}
+
+.information-contact .location,
+.information-contact .phone {
+  padding: 5px;
+  margin: 1% 0 1% 10%;
+}
+
+.information-contact .location i {
+  font-size: 20px;
+}
+
+.information-contact .location span,
+.information-contact .phone span {
+  font-size: 17px;
+}
+
+
+.information-contact .phone i {
+  font-size: 20px;
+}
+
+.information-contact span:hover {
+  color: rgb(233, 95, 15);
+  cursor: pointer;
+}
+
+/* end nav of information-contact */
+
+/* main nav  */
+
+/*Start Navigation*/
+nav {
+  display: flex;
+  padding: 20px;
+  color: white;
+  background-color: black;
+
+  
+ 
+}
+a {
+  text-decoration: none;
+}
+nav .logo {
+  display: block;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 30px;
+  flex: 3;
+  color: #eeeeee;
+}
+nav .links {
+  list-style: none;
+  flex: 9;
+  display: flex;
+}
+nav .links li {
+  margin-right: 30px;
+  margin-top: 8px;
+  position: relative;
+}
+nav .links li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.4px;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--main-color--);
+  transform-origin: bottom right;
+  transition: all 0.3s ease-out;
+}
+nav .links li:nth-child(1):after {
+  transform: scaleX(1);
+}
+nav .links li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: white;
+}
+nav .links li a {
+  font-size: 18px;
+  font-family: "Garamond", serif;
+  line-height: 1.28;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--main-color--);
+}
+/*End Navigation*/
+
+/* end main nav */
+
+
+/* contact us */
+
+.contact-us {
+    
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/3.jpg);
+
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: 100% 100vh;
+    padding: 10px;
+}
+
+.contact-us .contact{
+
+   
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+  
+}
+.contact-us .contact h1{
+
+    font-size: 55px;
+    font-family: 'Philosopher', sans-serif;
+    color:var(--main-color--);
+}
+
+.contact-us .data-form{
+
+    padding: 10px;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+
+}
+
+.contact-us .form{
+
+    padding: 5px;
+    margin-left: 79px;
+  
+}
+
+.contact-us .form form{
+
+   padding: 5px;
+
+}
+input[type="text"],
+input[type="email"]{
+
+    display: block;
+    margin-top: 15px;
+    width: 90%;
+    padding: 12px 10px;
+    font-size: 15px;
+
+}
+
+
+
+textarea{
+
+    margin-top: 15px;
+    width: 575px;
+    height: 20vh;  
+    padding: 12px;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea{
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--main-color--);
+    color: white;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+
+    display: block;
+    padding: 7px 55px;
+    color: var(--main-color--);
+    cursor: pointer;
+    margin: 20px 0 0 30%;
+    font-size: 25px;
+
+}
+
+input[type="submit"]:hover{
+
+color: white;
+background-color: var(--main-color--);
+transition: 0.6s;
+}
+
+
+.contact-us .map iframe{
+
+    border-radius: 10px;
+    margin-top: 17px;
+    margin-left: 93px;
+    width: 80%;
+    height: 42vh;
+    opacity: 0.8;
+  
+}
+/* end contact us */
+
+
+/* footer */
+footer{
+    background-color: rgb(34, 33, 33);
+    margin-top: 15px;
+    padding: 10px 60px ;
+    height: 52vh;
+  
+}
+
+footer .More-Information{
+
+    color: white;
+    padding: 10px;
+    font-family: 'Philosopher', sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    
+    
+}
+
+footer .More-Information .info-contact{
+
+    padding: 10px;
+    margin-left: 20px;
+   
+
+}
+footer .More-Information .info-contact h3{
+
+    margin-top: 30px; 
+    font-size: 20px;
+    color: var(--main-color--);
+}
+
+footer .More-Information .info-contact h3 span,
+footer .More-Information .info-contact h3 a{
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    color: white;
+    opacity: 0.5;
+    font-size: 17px;
+}
+
+footer .More-Information .info-contact h3 a{
+
+    text-decoration: none;
+ 
+}
+footer .More-Information .info-contact h3 a:hover{
+
+   color: var(--main-color--);
+   transition: 0.6;
+   opacity: 1;
+ 
+}
+
+
+.subscribe{
+
+   
+    padding: 10px;
+
+}
+
+.subscribe h3 , .subscribe p ,
+.send-subscribe{
+
+    margin-top: 20px;
+}
+
+.subscribe p{
+
+    opacity: 0.8;
+    line-height: 23px;
+   
+}
+
+.subscribe h3 , .subscribe .send-subscribe i{
+
+    color: var(--main-color--);
+}
+
+.subscribe .send-subscribe i{
+
+    font-size: 20px;
+}
+
+.subscribe .send-subscribe{
+
+    border: 1px solid var(--main-color--);
+    border-radius:5px ;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    height: 40px;
+    width: 80%;
+   
+}
+
+.subscribe .send-subscribe #email{
+
+    width: 170%;
+    margin-top: 0;
+    border: none;
+    outline: none;
+}
+
+.subscribe .send-subscribe i{
+
+    margin-left: 10px;
+}
+.subscribe .send-subscribe #subscribe-btn{
+
+    position: absolute;
+    top: 137%;
+    left: 36%;
+    margin-top: 3.7%;
+    font-size: 16px;
+    border-radius:6px ;
+    padding: 10px 20px;
+}
+
+
+footer .copyright {
+
+    height: 10vh;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    margin-top: 3%;
+   
+}
+
+footer .copyright .copy{
+
+ 
+    margin-left:5%;
+    margin-top: 10px;
+  
+}
+
+footer .copyright .copy h4{
+
+    color: var(--main-color--);
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+  
+   
+}
+
+
+
+.copyright .imgs img{
+
+    margin-left: 35%;
+ 
+    
+}
+
+
+
+footer .social-media{
+
+    padding: 1px;
+    width: 20%;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+footer .social-media a{
+
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 25px;
+    color: rgb(209, 138, 72);
+    
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer .social-media a:hover{
+
+    border: 1px solid var(--main-color--);
+    color: var(--main-color--);
+    transition: 0.5s;
+   
+}
+/* end footer */
+
